@@ -37,8 +37,8 @@ public class TransactionProcessor implements TransactionProcessorLocal {
      * Try the difference between findByIdForUpdate, which locks the account record
      * and findById, which does not.
      */
-    //Account account = accountDAO.findById(transaction.getAccountId());
-    Account account = accountDAO.findByIdForUpdate(transaction.getAccountId());
+    Account account = accountDAO.findById(transaction.getAccountId());
+    //Account account = accountDAO.findByIdForUpdate(transaction.getAccountId());
     
     
     double bal = account.getBalance();

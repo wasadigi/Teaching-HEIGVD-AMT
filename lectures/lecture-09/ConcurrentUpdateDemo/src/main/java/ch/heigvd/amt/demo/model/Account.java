@@ -21,8 +21,8 @@ public class Account {
   @Id
   private long id;
   
-  @Version 
-  int version;
+  //@Version 
+  //int version;
   
   private String holderName;
   
